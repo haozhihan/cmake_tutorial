@@ -9,7 +9,4 @@ add_subdirectory(MyMath)
 
 # add the executable
 add_executable(${PROJECT_NAME} compute_sqrt.cpp)
-
-target_link_libraries(${PROJECT_NAME} PUBLIC libmymath)
-
-target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/MyMath/include)
+target_link_libraries(${PROJECT_NAME} PRIVATE libmymath)
