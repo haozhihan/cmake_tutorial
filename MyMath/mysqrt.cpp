@@ -1,23 +1,10 @@
 #include <iostream>
-#include "math_func.h"
+#include <gsl/gsl_math.h>
+
+#include "mysqrt.h"
 
 // a hack square root calculation using simple operations
-double mysqrt(double x)
-{
-  if (x <= 0) {
-    return 0;
-  }
-
-  double result = x;
-
-  // do ten iterations
-  for (int i = 0; i < 10; ++i) {
-    if (result <= 0) {
-      result = 0.1;
-    }
-    double delta = x - (result * result);
-    result = result + 0.5 * delta / result;
-    std::cout << "Computing sqrt of " << x << " to be " << result << std::endl;
-  }
-  return result;
+double mysqrt(double num) {
+    std::cout << "use boost math: " << std::endl;
+    return gsl_sqrt(num);
 }
