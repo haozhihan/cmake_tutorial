@@ -33,7 +33,7 @@ all: app
 # 由于后面需要多次使用 compute_sqrt.o 等目标文件列表，这里赋值给变量
 # objects。
 #
-objects := compute_sqrt.o
+objects := main.o
 
 #
 # app 是我们最终要生成的可执行文件名，它依赖 objects 中的
@@ -46,8 +46,8 @@ app: $(objects)
 	$(CXX) -o $@ $(objects)
 
 # compute_sqrt.o 目标文件依赖 compute_sqrt.cpp 源文件。
-compute_sqrt.o: compute_sqrt.cpp
-	$(CXX) -c compute_sqrt.cpp
+compute_sqrt.o: main.cpp
+	$(CXX) -c main.cpp
 
 #
 # clean 用于清除构建生成的临时文件、目标文件和可执行文件。
