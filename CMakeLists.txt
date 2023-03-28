@@ -18,7 +18,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE libmymath)
 #
 # 语法： target_include_directories(target [INTERFACE|PUBLIC|PRIVATE] dir1 dir2 ...)
 # 
-target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/MyMath/include)
 
 
 #[[
