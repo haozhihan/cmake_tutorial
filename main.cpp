@@ -1,6 +1,6 @@
 // A simple demo that computes the square root of a number
 #include <iostream>
-#include "math_func.h"
+#include "mysqrt.h"
 
 int main()
 {
