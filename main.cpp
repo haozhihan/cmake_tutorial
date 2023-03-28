@@ -2,6 +2,9 @@
 #include <iostream>
 #include <cmath>
 
+// 如何编译？
+// g++ main.cpp
+
 int main()
 {
     double inputValue;
@@ -12,5 +15,7 @@ int main()
 
     std::cout << "The square root of " << inputValue 
             << " is " << outputValue << std::endl;
+
     return 0;
 }
+
