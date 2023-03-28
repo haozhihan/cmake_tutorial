@@ -1,2 +1,11 @@
+# 将源代码编译成静态库或动态链接库。
 add_library(libmymath STATIC mysqrt.cpp)
-target_include_directories(libmymath PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+
+# add_library(<name> [STATIC | SHARED | MODULE]
+#             [EXCLUDE_FROM_ALL]
+#             source1 [source2 ...])
+            
+# add_executable(<name> [WIN32] [MACOSX_BUNDLE] 
+#             [EXCLUDE_FROM_ALL] 
+#             source1 [source2 ...])
