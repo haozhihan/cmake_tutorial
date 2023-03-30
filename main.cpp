@@ -1,6 +1,6 @@
 // A simple demo that computes the square root of a number
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 // 如何编译？
 // g++ main.cpp
@@ -13,9 +13,7 @@ int main()
 
     const double outputValue = sqrt(inputValue);
 
-    std::cout << "The square root of " << inputValue 
-            << " is " << outputValue << std::endl;
+    std::cout << "The square root of " << inputValue << " is " << outputValue << std::endl;
 
     return 0;
 }
-
