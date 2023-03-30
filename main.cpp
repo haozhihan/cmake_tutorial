@@ -1,6 +1,7 @@
 // A simple demo that computes the square root of a number
-#include <iostream>
 #include "mysqrt.h"
+
+#include <iostream>
 
 int main()
 {
@@ -10,7 +11,6 @@ int main()
 
     const double outputValue = mysqrt(inputValue);
 
-    std::cout << "The square root of " << inputValue 
-            << " is " << outputValue << std::endl;
+    std::cout << "The square root of " << inputValue << " is " << outputValue << std::endl;
     return 0;
 }
