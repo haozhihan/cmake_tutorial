@@ -8,5 +8,5 @@ project(app)
 add_subdirectory(MyMath)
 
 # add the executable
-add_executable(${PROJECT_NAME} compute_sqrt.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE libmymath)
