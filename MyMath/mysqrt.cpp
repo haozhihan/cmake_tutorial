@@ -8,6 +8,6 @@
 double mysqrt(double num)
 {
     num = sqrt(num);
-    std::cout << "use boost math: " << std::endl;
+    std::cout << "use boost math round function: " << std::endl;
     return boost::math::round<double>(num);
 }
